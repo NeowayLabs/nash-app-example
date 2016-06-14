@@ -13,6 +13,7 @@ fn run() {
     outDir <= mktemp -d | xargs echo -n
     tar -c $IMAGEFILE $outDir
 
+    # Create a container (user, pid, mount, ipc, uts)
     rfork upmis {
         mount -t proc proc $outDir + "/proc"
         mount -t tmpfs tmpfs $outDir + "/tmp"
