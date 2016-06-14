@@ -5,7 +5,7 @@
 import nash-rootfs/all
 
 TARGET         = "app.example"
-VERSIOn        = "0.0.1"
+VERSION        = "0.0.1"
 UBUNTU_RELEASE = "trusty"
 IMAGEFILE      = $TARGET+"-"+$VERSION+".tgz"
 
